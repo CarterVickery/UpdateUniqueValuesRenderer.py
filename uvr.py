@@ -18,10 +18,6 @@ arcpy.RefreshActiveView()
 arcpy.RefreshTOC()
 mxd.save()
 
-del mxd
-del RevalVCSlyr
-
-	
 # Write messages to a Text File
 txtFile = open("D:\\Workspace\\Python\\vcsRevalUniqueValueSymbologyUpdate.txt","w")
 txtFile.write (arcpy.GetMessages())
